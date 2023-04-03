@@ -6,6 +6,10 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /*HEADER*/
 header{
     display: flex;
@@ -13,8 +17,8 @@ header{
     flex-direction: column;
 }
 .header-logo{
-    width: 100%;
-    height: 100px;
+    width: 60%;
+    height: auto;
 
     display: flex;
     align-items: center;
@@ -72,10 +76,16 @@ header{
     display: flex;
     flex-direction: row;
 }
-.products-section{
+
+.products-section {
     width: 33%;
     padding: 20px;
+}
 
+.products-section img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /*FOOTER*/
@@ -146,3 +156,61 @@ p{
     font-style: none;
     text-decoration: none;
   }
+
+/*RESPONSIVE*/
+@media (max-width: 960px){
+
+    /*HEADER*/
+    .header-logo{
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+    .header-nav{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-nav-link{
+        width: 100%;
+    }
+
+    /*BANNER*/
+    .banner-wrapper{
+        width: 100%;
+        height: auto;
+
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+        height: auto;
+    }
+
+    /*PRODUCTS*/
+    .products-wrapper{
+        margin: 48px 0px;
+
+        flex-direction: column;
+    }
+    .products-section{
+        width: 100%;
+        padding: 40px;
+    }
+
+    /*FOOTER*/
+    .footer-wrapper{
+        width: 100%;
+        min-height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-image: url(images/gatorade_orange-liquid_footer.png.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: left;
+    }
+}
