@@ -3,7 +3,7 @@
 body {
   margin: 0;
   color: #040404;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /*HEADER*/
@@ -41,7 +41,7 @@ header{
 /*BANNER*/
 .banner-wrapper{
     width: 100%;
-    min-height: 620px;
+    min-height: 640px;
 
     display: flex;
     flex-direction: row;
@@ -54,7 +54,7 @@ header{
 
 .banner-content{
     max-width: 500px;
-    min-height: 620px;
+    min-height: 640px;
 
     display: flex;
     flex-direction: column;
@@ -67,6 +67,8 @@ header{
     width: 100%;
     height: auto;
 
+    margin: 48px 0px;
+
     display: flex;
     flex-direction: row;
 }
@@ -78,17 +80,33 @@ header{
 
 /*FOOTER*/
 .footer-wrapper{
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background-image: url(images/gatorade_orange-liquid_footer.png.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: left;
 }
 
 /*STYLE*/
 h1{
     margin: 0;
-    font-size: 64px;
+    font-size: 56px;
 }
 h2{
     margin: 0;
     font-size: 32px;
+}
+h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
 }
 p{
     font-size: 16px;
@@ -98,14 +116,12 @@ p{
 .header-nav-link{
     width: 33%;
     padding-top: 30px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
     margin: 0px 20px;
 
     text-align: center;
     font-size: 32px;
     text-decoration: none;
-
-    background-color: #c6c6c6;
 }
 .header-nav-link:hover {
     border-bottom: 20px solid #ef7226;
@@ -115,6 +131,7 @@ p{
     margin-top: 20px;
     padding: 16px 64px;
     border-radius: 10px;
+    display: inline-block;
 
     font-size: 24px;
     font-weight: 900;
